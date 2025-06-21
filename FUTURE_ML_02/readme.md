@@ -1,4 +1,4 @@
-## 📊 Stock Price Prediction using LSTM
+## 📊 Stock Price Prediction
 
 ### 🚀 Objective
 Predict future stock closing prices using past historical data and LSTM neural networks.
@@ -34,7 +34,10 @@ Predict future stock closing prices using past historical data and LSTM neural n
 ---
 
 ### 📎 Output Sample
-*(Add plot of predicted vs actual closing prices here)*
+Actual vs Predicted Plot (AAPL Stock)
+![AAPL Output](output1.png)
+Actual vs Predicted Plot (A Stock)
+![A Output](output2.png)
 
 ---
 

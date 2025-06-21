@@ -21,7 +21,7 @@ Forecast future daily sales using real-world retail data with Facebook Prophet.
 - MAPE was not used due to irregular low sales values inflating % error.
 
 ## 📎 Output Sample  
-*(Optional: add plot as image)*
+![Output](FUTURE_ML_01/Output.png)
 
 ## 📁 Dataset  
 [Kaggle - Sample Sales Data](https://www.kaggle.com/datasets/kyanyoga/sample-sales-data)

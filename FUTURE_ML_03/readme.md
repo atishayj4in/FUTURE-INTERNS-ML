@@ -27,11 +27,10 @@ Build an intelligent chatbot that can answer customer queries by leveraging a la
 - Display the chatbot with a Streamlit UI
 
 ---
-
-### 💬 Output Sample  
-Chatbot UI Preview (Streamlit-based):  
-![Chatbot UI](chatbot_ui.png)
-
+# 🎛️ Chatbot Simulation
+<p align="left">
+<a href="https://youtu.be/_EDkwbUeWZs?si=c-WnGQFxeSmD3kQA" target="blank"><img align="center" src="chatbot_ui.png" alt="Click here to view Chatbot Simulation Video" height="100%" width="100%" /></a>
+    
 ---
 
 ### 📁 Folder Structure

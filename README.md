@@ -34,9 +34,9 @@ FUTURE-INTERNS-ML/
 │   └──  requirements.txt
 │
 └── README.md
-
-
+```
 ---
+
 
 ## 📊 Project 1: Sales Forecasting using Prophet
 
@@ -65,19 +65,6 @@ FUTURE-INTERNS-ML/
 
 ---
 
-## 🚀 Deployment
-
-To run the chatbot locally:
-
-```bash
-cd src
-uvicorn app:app --reload
-```
-
-Visit: `http://localhost:8000`
-
----
-
 ## 📚 Learnings
 
 * Real-world time series forecasting & sequence modeling
@@ -90,8 +77,8 @@ Visit: `http://localhost:8000`
 ## 📬 Contact
 
 If you'd like to collaborate or learn more about my work:
-📧 [atishay.contact@gmail.com](mailto:atishay.contact@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/atishayjain)
+📧 [atishayj4in@gmail.com](mailto:atishayj4in@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/atishayj4in)
 
 ---
 

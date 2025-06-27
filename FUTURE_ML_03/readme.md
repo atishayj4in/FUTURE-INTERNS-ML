@@ -30,7 +30,7 @@ Build an intelligent chatbot that can answer customer queries by leveraging a la
 
 ### 💬 Output Sample  
 Chatbot UI Preview (Streamlit-based):  
-![Chatbot UI](https://cdn-icons-png.flaticon.com/512/4712/4712100.png)
+![Chatbot UI](FUTURE_ML_03/chatbot_ui.png)
 
 ---
 

@@ -7,20 +7,33 @@ Welcome to my Machine Learning Internship portfolio, completed under the **Futur
 ## 📁 Repository Structure
 
 ```
-FUTURE_ML_03/
-├── data/
-│   ├── raw/                          # Original customer support dataset
-│   └── processed/                    # Preprocessed .pkl for model training
-├── saved_models/                    # Trained models and label encoder
-├── src/
-│   ├── app.py                        # FastAPI server
-│   ├── analytics.py                  # Exploratory data analysis script
-│   ├── data_preprocessing.py         # Text cleaning/tokenization
-│   ├── intent_model.py               # Intent classification training
-│   └── static/                       # Frontend (HTML, CSS, JS)
-├── visualization/                   # UI screenshots and architecture images
-└── README.md                        # Project overview and instructions
-```
+FUTURE-INTERNS-ML/
+├── FUTURE_ML_01/
+│   ├── Output.png
+│   ├── SalesForecastingModel_by_AtishayJain.ipynb
+│   ├── readme.md
+│   ├── requirements.txt
+│   └── sales_data_sample.csv
+│
+├── FUTURE_ML_02/
+│   ├── StockPricePredictionModel_by_AtishayJain.ipynb
+│   ├── output1.png
+│   ├── output2.png
+│   ├── readme.md
+│   └── requirements.txt
+│
+├── FUTURE_ML_03/
+│   ├── data/
+│   ├── .env
+│   ├── chatbot.py
+│   ├── chatbot_ui.png
+│   ├── connect_memory_with_llm.py
+│   ├── create_memory_for_llm.py
+│   ├── intent_generation.py
+│   ├── readme.md
+│   ├── requirements.txt
+│   └── README.md
+
 
 ---
 

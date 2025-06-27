@@ -1,132 +1,84 @@
-## 🤖 Customer Support Chatbot
+# 🧠 Future Interns ML Internship – Project Portfolio
 
-### 🚀 Objective  
-Build an intelligent chatbot that can answer customer queries by leveraging a large dataset and contextual search using vector embeddings and LLMs.
-
----
-
-### 🧰 Tools Used  
-- Python  
-- Streamlit  
-- LangChain  
-- FAISS  
-- HuggingFace Sentence Transformers  
-- Groq LLM  
-- dotenv  
-- Pandas
+Welcome to my Machine Learning Internship portfolio, completed under the **Future Interns ML Batch 03**. This repository showcases three end-to-end machine learning projects developed using real-world datasets, combining time series forecasting, deep learning, and NLP-based chatbot systems.
 
 ---
 
-### 🔍 Key Steps  
-- Load customer chat data from a `.csv` file  
-- Generate `intents.json` from raw conversations  
-- Chunk and embed textual data using Sentence Transformers  
-- Store embeddings in a FAISS vectorstore  
-- Retrieve relevant context during inference using similarity search  
-- Use Groq's LLaMA-3 model to respond with contextual accuracy  
-- Display the chatbot with a Streamlit UI
+## 📁 Repository Structure
 
----
-
-### 💬 Output Sample  
-Chatbot UI Preview (Streamlit-based):  
-![Chatbot UI](https://cdn-icons-png.flaticon.com/512/4712/4712100.png)
-
----
-
-### 📁 Folder Structure
-
-```plaintext
-├── chatbot.py                     # Streamlit chatbot interface
-├── connect_memory_with_llm.py     # Run LLM with vector retrieval
-├── create_memory_for_llm.py       # Create vector DB from intents
-├── intent_generation.py           # Convert CSV to intents.json
-├── requirements.txt               # All Python dependencies
-├── .env                           # Contains GROQ_API_KEY
-│
+```
+FUTURE_ML_03/
 ├── data/
-│   ├── chatbot_data.csv           # Raw customer support data
-│   └── intents.json               # Auto-generated intent file
-│
-├── vectorstore/
-│   └── db_faiss/
-│       ├── index.faiss
-│       └── index.pkl
-│
-├── venv/                          # Virtual environment folder (optional)
+│   ├── raw/                          # Original customer support dataset
+│   └── processed/                    # Preprocessed .pkl for model training
+├── saved_models/                    # Trained models and label encoder
+├── src/
+│   ├── app.py                        # FastAPI server
+│   ├── analytics.py                  # Exploratory data analysis script
+│   ├── data_preprocessing.py         # Text cleaning/tokenization
+│   ├── intent_model.py               # Intent classification training
+│   └── static/                       # Frontend (HTML, CSS, JS)
+├── visualization/                   # UI screenshots and architecture images
+└── README.md                        # Project overview and instructions
 ```
 
 ---
 
-### ⚙️ How to Run
+## 📊 Project 1: Sales Forecasting using Prophet
 
-#### 1. Clone the Repository
-
-```bash
-git clone <your-repo-url>
-cd <repo-folder>
-```
-
-#### 2. Create a Virtual Environment & Install Dependencies
-
-```bash
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-#### 3. Add Your Groq API Key  
-Create a `.env` file in the root folder and add:
-
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-Also, paste the same key in `connect_memory_with_llm.py` where marked.
-
-#### 4. Prepare Your Data  
-Ensure your CSV file is in `data/chatbot_data.csv`.
-
-#### 5. Generate Intents
-
-```bash
-python intent_generation.py
-```
-
-#### 6. Create Vector Database
-
-```bash
-python create_memory_for_llm.py
-```
-
-#### 7. Launch the Chatbot (Localhost)
-
-```bash
-streamlit run chatbot.py
-```
-
-Visit [http://localhost:8501](http://localhost:8501) to interact.
+* Utilized Facebook Prophet to predict daily retail sales based on transactional history.
+* Handled trend/seasonality tuning and changepoint optimization.
+* **Final MAE**: \~16,855
+* **Tools**: Python, Pandas, Prophet, Matplotlib
 
 ---
 
-### 📎 Dataset  
-- Custom customer support dataset (`chatbot_data.csv`)
-- Includes both inbound queries and responses
+## 📈 Project 2: Stock Price Prediction with LSTM
+
+* Designed an LSTM-based pipeline to predict future stock prices using windowed sequences.
+* Preprocessed over 2000+ CSVs and implemented sequence-to-one regression.
+* Evaluated predictions using RMSE and visual comparison.
+* **Tools**: Python, Keras, NumPy, Matplotlib
 
 ---
 
-### 💡 Learnings  
-- Built a chatbot using LangChain and Groq's LLM  
-- Understood how to chunk and embed custom data  
-- Used FAISS for similarity-based retrieval  
-- Developed an interactive chat UI using Streamlit  
-- Applied `.env` for secure API management  
+## 💬 Project 3: Customer Support Chatbot with NLP
+
+* Built an end-to-end FastAPI-based chatbot trained on real ticket data.
+* Used Bi-LSTM for intent classification and LangChain + Groq for RAG semantic Q\&A.
+* Integrated a modern HTML/CSS/JS frontend with avatars, chat history, and confidence scoring.
+* **Tools**: TensorFlow, LangChain, Groq, ChromaDB, NLTK, FastAPI
 
 ---
 
-### 🧠 Future Improvements  
-- Add authentication and user session tracking  
-- Add support for multi-intent classification  
-- Deploy chatbot on cloud with persistent vector store
+## 🚀 Deployment
+
+To run the chatbot locally:
+
+```bash
+cd src
+uvicorn app:app --reload
+```
+
+Visit: `http://localhost:8000`
 
 ---
+
+## 📚 Learnings
+
+* Real-world time series forecasting & sequence modeling
+* NLP-based intent classification and chatbot deployment
+* Deep integration of front-end with ML APIs
+* End-to-end ML system design with reproducibility and modularity
+
+---
+
+## 📬 Contact
+
+If you'd like to collaborate or learn more about my work:
+📧 [atishay.contact@gmail.com](mailto:atishay.contact@gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/atishayjain)
+
+---
+
+> ✨ This internship gave me production-ready ML exposure and pushed me to integrate intelligence with interactivity.

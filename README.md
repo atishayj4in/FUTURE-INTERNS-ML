@@ -31,8 +31,9 @@ FUTURE-INTERNS-ML/
 │   ├── create_memory_for_llm.py
 │   ├── intent_generation.py
 │   ├── readme.md
-│   ├── requirements.txt
-│   └── README.md
+│   └──  requirements.txt
+│
+└── README.md
 
 
 ---
